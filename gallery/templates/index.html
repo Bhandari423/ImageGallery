@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+<title>Image Gallery</title>
+</head>
+
+<body>
+    <h1>Images Gallery</h1>
+    {% for image in images %}
+        <a href="specificimage/{{image.id}}">  
+           <img src="{{image.upload_image.url}}" height="100px" width="100px" alt="{{image.description}}")>
+        </a>
+        <br><br>
+    {% endfor %}
+  
+</body>
+</html>

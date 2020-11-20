@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Specific Image</title>
+    <style>
+        #a{
+            height: 250px;
+            width: 250px;
+        }
+    </style>
+    <script>
+        let x=0
+        function f1(){
+            x += 90
+            document.getElementById("a").style.transform="rotate("+x+"deg)"
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Click button to rotate image</h1>
+    <center>
+    <div id="a">
+        <img src="{{photo.upload_image.url}}">   
+    </div>
+    </center>    
+    <button type="button" onclick="f1()">rotate</button>
+
+</body>
+</html>
